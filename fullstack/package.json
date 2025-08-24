@@ -1,24 +1,26 @@
 {
-  "name": "fullstack",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "bun run index.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "concurrently": "^9.2.0"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
-  "dependencies": {
-    "dotenv": "^17.2.1"
-  }
+   "name": "fullstack",
+   "module": "index.ts",
+   "type": "module",
+   "private": true,
+   "scripts": {
+      "dev": "bun run index.ts",
+      "format": "prettier --write ."
+   },
+   "devDependencies": {
+      "@types/bun": "latest",
+      "concurrently": "^9.2.0",
+      "prettier": "3.6.2"
+   },
+   "peerDependencies": {
+      "typescript": "^5"
+   },
+   "workspaces": {
+      "packages": [
+         "packages/*"
+      ]
+   },
+   "dependencies": {
+      "dotenv": "^17.2.1"
+   }
 }
